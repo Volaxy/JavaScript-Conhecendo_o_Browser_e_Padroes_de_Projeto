@@ -29,3 +29,7 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 ## 02 - Especificando uma Negociação &#x1F516;
 * Abstrair o conceito de Negociação nas classes de JS.
 * Encapsular os atributos da negociação.
+
+## 03 - A Ligação entre as Ações do Usuário e o Modelo &#x1F516;
+* Formatar o valor data e transforma-lo em um objeto `Date`.
+* Modificar um array.
