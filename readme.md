@@ -25,3 +25,7 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 
 ## 01 - Prólogo: Regras, Código e Manutenção &#x1F516;
 * Implementar uma solução *hard-code*, dificultando a leitura do código.
+
+## 02 - Especificando uma Negociação &#x1F516;
+* Abstrair o conceito de Negociação nas classes de JS.
+* Encapsular os atributos da negociação.
