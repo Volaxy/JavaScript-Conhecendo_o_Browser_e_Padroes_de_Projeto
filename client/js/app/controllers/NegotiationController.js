@@ -1,22 +1,31 @@
 class NegotiationController {
     constructor() {
-        const $ = document.querySelector.bind(document); // When the "querySelector" is called, the context of the "this" is the "NegotiationController" object, the "bind" associate the "document" object to the "this" of the function
+        const $ = document.querySelector.bind(document);
         
         this._$inputDate = $("#date");
         this._$inputQuantity = $("#quantity");
         this._$inputValue = $("#value");
+
+        this._negotiationsList = new NegotiationsList();
     }
 
     add(event) {
         event.preventDefault();
 
-        const formatedDate = new Date(...this._$inputDate.value
-            .split("-")
-            .map((value, index) => index == 1 ? value - 1 : value)); // Decrement the month value because of the Index Array logic
+        const negotiation = new Negotiation(DateHelper.textToDate(this._$inputDate.value), this._$inputQuantity.value, this._$inputValue.value);
+        this._negotiationsList.addNegotiation(negotiation);
 
-        const negotiation = new Negotiation(formatedDate, this._$inputQuantity.value, this._$inputValue.value);
+        this._clearForm();
 
-        console.log(negotiation);
+        console.log(this._negotiationsList.negotiations);
+    }
+
+    _clearForm() {
+        this._$inputDate.value = "";
+        this._$inputQuantity.value = 1;
+        this._$inputValue.value = 0.0;
+
+        this._$inputDate.focus();
     }
 }
 

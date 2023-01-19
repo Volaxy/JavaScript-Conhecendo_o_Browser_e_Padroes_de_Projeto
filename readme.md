@@ -33,3 +33,7 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 ## 03 - A Ligação entre as Ações do Usuário e o Modelo &#x1F516;
 * Formatar o valor data e transforma-lo em um objeto `Date`.
 * Modificar um array.
+
+## 04 - Lidar com Data é Trabalhoso? Chame um Ajudante! &#x1F516;
+* Criar uma classe para trabalhar com datas.
+* Usar **Regex** para validar o formato dos inputs.
