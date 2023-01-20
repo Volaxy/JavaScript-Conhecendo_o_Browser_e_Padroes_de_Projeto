@@ -37,3 +37,7 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 ## 04 - Lidar com Data é Trabalhoso? Chame um Ajudante! &#x1F516;
 * Criar uma classe para trabalhar com datas.
 * Usar **Regex** para validar o formato dos inputs.
+
+## 05 - Temos o Modelo, mas e a View? &#x1F516;
+* Criar um template da tabela com a View.
+* Usar o `reduce()` para obter o volume total.

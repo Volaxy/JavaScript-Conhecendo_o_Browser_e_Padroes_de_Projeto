@@ -7,17 +7,20 @@ class NegotiationController {
         this._$inputValue = $("#value");
 
         this._negotiationsList = new NegotiationsList();
+        this._negotiationsView = new NegotiationsView($(".negotiations-view"));
+
+        this._negotiationsView.update(this._negotiationsList);
     }
-
-    add(event) {
+    
+    addNegotiation(event) {
         event.preventDefault();
-
+        
         const negotiation = new Negotiation(DateHelper.textToDate(this._$inputDate.value), this._$inputQuantity.value, this._$inputValue.value);
         this._negotiationsList.addNegotiation(negotiation);
-
+        
+        this._negotiationsView.update(this._negotiationsList);
+        
         this._clearForm();
-
-        console.log(this._negotiationsList.negotiations);
     }
 
     _clearForm() {
