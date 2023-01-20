@@ -13,12 +13,6 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 ## Links Úteis &#x1F517;
 * [Base Project](https://github.com/alura-cursos/javascript-avancado-i/archive/aula1.zip) - Código base do projeto.
 
-## Siglas &#x1F5FA;
-*
-
-## Atalhos &#x2328;
-*
-
 ***
 
 > Os códigos e comentários feitos em cada seção estão dentro do commit do capítulo em que foi feito.
@@ -41,3 +35,7 @@ URL do curso -> [JavaScript - Conhecendo o Browser e Padrões de Projeto](https:
 ## 05 - Temos o Modelo, mas e a View? &#x1F516;
 * Criar um template da tabela com a View.
 * Usar o `reduce()` para obter o volume total.
+
+## 06 - Generalizando a Solução da nossa View &#x1F516;
+* Usar **herança** nas Views.
+* Criar uma mensagem de feedback.

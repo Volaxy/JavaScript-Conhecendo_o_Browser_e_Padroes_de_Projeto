@@ -1,9 +1,9 @@
-class NegotiationsView {
+class NegotiationsView extends View {
     constructor(reference) {
-        this._reference = reference;
+        super(reference);
     }
     
-    _template(negotiationsList) {
+    template(negotiationsList) {
         return `
             <table class="table table-hover table-bordered">
                 <thead>
@@ -34,9 +34,5 @@ class NegotiationsView {
                 </tfoot>
             </table>
         `;
-    }
-
-    update(negotiationsList) {
-        this._reference.innerHTML = this._template(negotiationsList);
     }
 }

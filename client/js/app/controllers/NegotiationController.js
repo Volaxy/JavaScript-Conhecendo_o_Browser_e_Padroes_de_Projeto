@@ -8,7 +8,11 @@ class NegotiationController {
 
         this._negotiationsList = new NegotiationsList();
         this._negotiationsView = new NegotiationsView($(".negotiations-view"));
-
+        
+        this._message = new Message();
+        this._messageView = new MessageView($("#message-view"));
+        this._messageView.update(this._message);
+        
         this._negotiationsView.update(this._negotiationsList);
     }
     
@@ -19,6 +23,8 @@ class NegotiationController {
         this._negotiationsList.addNegotiation(negotiation);
         
         this._negotiationsView.update(this._negotiationsList);
+        this._message.text = "Negotiation Added with Success";
+        this._messageView.update(this._message);
         
         this._clearForm();
     }
